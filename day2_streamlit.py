@@ -8,7 +8,7 @@ import os
 if os.getenv('USER', "None") == 'appuser': # streamlit
     hf_token = st.secrets['HF_TOKEN']
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
-#else:
+else:
     # ALSO ADD HERE YOUR PROXY VARS
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.environ["MY_HF_API_TOKEN"]
 
